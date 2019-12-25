@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_swagger',
-    'gateway',
 ]
 
 REST_FRAMEWORK = {
@@ -81,7 +80,6 @@ APIS = {
     'mixnet': BASEURL,
     'postproc': BASEURL,
     'store': BASEURL,
-    'gateway': BASEURL,
     'visualizer': BASEURL,
     'voting': BASEURL,
 }
