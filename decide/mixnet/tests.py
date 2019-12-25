@@ -123,9 +123,7 @@ class MixnetCase(APITestCase):
         key = response.json()
         pk1 = key["p"], key["g"], key["y"]
 
-        data = {
-            "voting": 2,
-            "auths": [ { "name": "auth2", "url": "http://localhost:8000" }],
+        data = { "voting": 2, "auths": [ { "name": "auth2", "url": "http://localhost:8000" }],
             "key": {"p": pk1[0], "g": pk1[1]}
         }
         response = self.client.post('/mixnet/', data, format='json')
